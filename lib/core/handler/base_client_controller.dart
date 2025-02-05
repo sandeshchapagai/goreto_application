@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../utils/console.dart';
 import '../../utils/custom_dialogs.dart';
@@ -33,7 +32,7 @@ mixin BaseClientController {
     } else if (error is FetchDataException) {
       customApiExceptionHandleDialog(
           message: error.message, context: globalContext);
-    }else if (error is ApiNotRespondingException) {
+    } else if (error is ApiNotRespondingException) {
       customApiExceptionHandleDialog(
           message: error.message, context: globalContext);
     } else if (error is DataNotFoundException) {

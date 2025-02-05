@@ -30,13 +30,13 @@ class CustomGradientText extends StatelessWidget {
   final int? maxLines;
   final Gradient gradient;
   const CustomGradientText({
-    Key? key,
+    super.key,
     required this.text,
     required this.gradient,
     this.fontWeight,
     this.maxLines,
     this.padding = EdgeInsets.zero,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +66,7 @@ class CustomRichText extends StatelessWidget {
   final List<TextSpan>? customTextSpans;
 
   const CustomRichText({
-    Key? key,
+    super.key,
     this.firstText,
     this.secondText,
     this.style,
@@ -76,7 +76,7 @@ class CustomRichText extends StatelessWidget {
     this.firstColor,
     this.secondColor,
     this.customTextSpans,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:goreto_app/core/function/text_capitalization.dart';
+// ignore: depend_on_referenced_packages
 import 'package:http/http.dart' as http;
 
 import '../app/constants/app_text.dart';

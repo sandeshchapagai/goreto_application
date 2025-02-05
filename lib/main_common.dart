@@ -22,7 +22,6 @@ Future<void> initMainCommon({required Flavor flavor}) async {
 }
 
 initServices({required Flavor flavor}) async {
-  var isProdFlavor = flavor == Flavor.prod;
   WidgetsFlutterBinding.ensureInitialized();
   await AppSharedPreferences.sharedPrefInit();
   // await dotenv.load(fileName: ".env");

@@ -14,18 +14,9 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _selectedIndex = 0;
-
-  final List<String> _pageTexts = [
-    'Menu Page',
-    'Search Page',
-    'Print Page',
-    'People Page'
-  ];
-
   void _onItemTapped(int index) {
     setState(() {
-      _selectedIndex = index; // Change the current index
+// Change the current index
     });
   }
 
