@@ -191,7 +191,7 @@ class CustomThemeColors extends ThemeExtension<CustomThemeColors> {
       carbonGrey: carbonGrey ?? this.carbonGrey,
       orangyRed: orangyRed ?? this.orangyRed,
       quaternaryBackground: quaternaryBackground ?? this.quaternaryBackground,
-      greenIconbackground: greenIconbackground ?? this.greenIconbackground,
+      greenIconbackground: greenIconbackground ?? greenIconbackground,
     );
   }
 

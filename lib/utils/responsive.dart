@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 import '../core/app/constants/dimensions.dart';
 
-
 class Responsive extends StatelessWidget {
   static double kPlatformSpecBottomPadding = Platform.isAndroid ? 0 : 20;
   static const textFieldContentPadding =
@@ -42,7 +41,7 @@ class Responsive extends StatelessWidget {
       tabTop;
   final bool hasVerticalPadding, hasHorizontalPadding;
   const Responsive({
-    Key? key,
+    super.key,
     required this.context,
     required this.child,
     this.mblLeft,
@@ -55,7 +54,7 @@ class Responsive extends StatelessWidget {
     this.hasHorizontalPadding = true,
     this.mblTop,
     this.tabTop,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
