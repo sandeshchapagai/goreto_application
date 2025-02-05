@@ -32,8 +32,8 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: context.colors.secondaryBackground,
         extendBody: true,
+        backgroundColor: context.colors.secondaryBackground,
         floatingActionButton: FloatingActionButton(
             onPressed: () {},
             backgroundColor: context.colors.primary,
